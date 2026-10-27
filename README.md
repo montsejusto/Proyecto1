@@ -1,2 +1,3 @@
-#Tecnologias usadas
--PHP
+# Tecnologias usadas
+
+- PHP
