@@ -5,7 +5,7 @@ class Producto
 {
     
     protected $id;
-    protected $categoriaId;
+    protected $categoria_id;
     protected $nombre;
     protected $descripcion;
     protected $precio;
@@ -13,20 +13,36 @@ class Producto
     protected $activo;
     public function __construct(
         $id = null,
-        $categoriaId = null,
+        $categoria_id = null,
         $nombre = null,
         $descripcion = null,
         $precio = null,
         $imagen = null,
         $activo = null
     ) {
-        $this->id = $id;
-        $this->categoriaId = $categoriaId;
-        $this->nombre = $nombre;
-        $this->descripcion = $descripcion;
-        $this->precio = $precio;
-        $this->imagen = $imagen;
-        $this->activo = $activo;
+        if ($id !== null) {
+            # code...
+            $this->id = $id;
+        }
+        if ($categoria_id !== null) {
+            $this->categoria_id = $categoria_id;
+        }
+        if ($nombre !== null) {
+            # code...
+            $this->nombre = $nombre;
+        }
+        if ($descripcion !== null) {
+            $this->descripcion = $descripcion;
+        }
+        if ($precio !== null) {
+            $this->precio = $precio;
+        }
+        if ($imagen !== null) {
+            $this->imagen = $imagen;
+        }
+        if ($activo !== null ) {
+            $this->activo = $activo;
+        }
     }
     public function getId()
     {
@@ -38,16 +54,15 @@ class Producto
         $this->id = $id;
     }
 
-    public function getCategoriaId()
+    public function getCategoria_Id()
     {
-        return $this->categoriaId;
+        return $this->categoria_id;
     }
 
-    public function setCategoriaId($categoriaId)
+    public function setCategoria_Id($categoria_id)
     {
-        $this->categoriaId = $categoriaId;
+        $this->categoria_id = $categoria_id;
     }
-
     public function getNombre()
     {
         return $this->nombre;

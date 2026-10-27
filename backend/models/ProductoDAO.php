@@ -1,9 +1,9 @@
 <?php
 
 include_once("config/dataBase.php");
-include_once("models/Productos.php");
+include_once("models/Producto.php");
 
-class ProductosDAO
+class ProductoDAO
 {
     public static function getAll()
     {
@@ -14,7 +14,7 @@ class ProductosDAO
 
         $productos = [];
 
-        while ($producto = $result->fetch_object("Productos")) {
+        while ($producto = $result->fetch_object("Producto")) {
             $productos[] = $producto;
         }
 
@@ -32,7 +32,7 @@ class ProductosDAO
         $stmt->execute();
         $result = $stmt->get_result();
 
-        $producto = $result->fetch_object("Productos");
+        $producto = $result->fetch_object("Producto");
 
         $stmt->close();
         $con->close();
