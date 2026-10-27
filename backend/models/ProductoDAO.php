@@ -45,25 +45,21 @@ class ProductoDAO
         $con = DataBase::connect();
 
         $stmt = $con->prepare(
-            "INSERT INTO productos (categoria_id, nombre, descripcion, precio, imagen, activo)
-            VALUES (?, ?, ?, ?, ?, ?)"
+            "INSERT INTO productos (categoria_id, nombre, descripcion, precio)
+            VALUES (?, ?, ?, ?)"
         );
 
-        $categoriaId = $producto->getCategoriaId();
+        $categoriaId = $producto->getCategoria_Id();
         $nombre = $producto->getNombre();
         $descripcion = $producto->getDescripcion();
         $precio = $producto->getPrecio();
-        $imagen = $producto->getImagen();
-        $activo = $producto->getActivo();
-
+      
         $stmt->bind_param(
-            "issdsi",
+            "issd",
             $categoriaId,
             $nombre,
             $descripcion,
-            $precio,
-            $imagen,
-            $activo
+            $precio
         );
 
         $stmt->execute();
@@ -79,6 +75,27 @@ class ProductoDAO
         $stmt->bind_param("i", $id);
         $stmt->execute();
 
+        $stmt->close();
+        $con->close();
+    }
+    public static function update($producto)
+    {
+        $con = DataBase::connect();
+        $stmt = $con->prepare("UPDATE productos SET categoria_id = ?, nombre = ?, descripcion =?, precio=? WHERE id = ?");
+        $categoriaId = $producto->getCategoria_Id();
+        $nombre = $producto->getNombre();
+        $descripcion = $producto->getDescripcion();
+        $precio = $producto->getPrecio();
+        $id = $producto->getId();
+        $stmt->bind_param(
+            "issdi",
+            $categoriaId,
+            $nombre,
+            $descripcion,
+            $precio,
+            $id
+        );
+        $stmt->execute();
         $stmt->close();
         $con->close();
     }

@@ -3,7 +3,6 @@
 
 class Producto
 {
-    
     protected $id;
     protected $categoria_id;
     protected $nombre;

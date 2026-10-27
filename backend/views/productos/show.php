@@ -11,5 +11,6 @@
 
 
 <p>
+    <a href="?controller=producto&action=edit&id=<?= (int) $producto->getId() ?>">Editar</a>
     <a href="?controller=producto&action=destroy&id=<?= (int) $producto->getId() ?>">Eliminar</a>
 </p>
