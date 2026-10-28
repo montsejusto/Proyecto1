@@ -9,9 +9,30 @@ class productoController
 
     public function index()
     {
+        
+        
         $productos = ProductoDAO::getAll();
         $view = "views/productos/listado.php";
         include_once 'views/main.php';
+    }
+    public function list()
+    {
+        $productos = ProductoDAO::getAll();
+        $datosP = [];
+        foreach ($productos as $p) {
+            $datosP[] = [
+                'id' =>$p->getId(),
+                'categoria_id' => $p->getCategoria_Id(),
+                'nombre' => $p->getNombre(),
+                'descripcion' => $p->getDescripcion(),
+                'precio'=> $p->getPrecio(),
+                'imagen'=> $p->getImagen(),
+                'activo'=> $p->getActivo()
+            ];
+        }
+        header('Content-Type: application/json');
+        echo json_encode($datosP);
+        exit;
     }
 //USAR clases abstractas
     //mostrar detalles del producto al seleccionarlo
