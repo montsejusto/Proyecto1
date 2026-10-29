@@ -9,8 +9,7 @@ class productoController
 
     public function index()
     {
-        
-        
+           
         $productos = ProductoDAO::getAll();
         $view = "views/productos/listado.php";
         include_once 'views/main.php';

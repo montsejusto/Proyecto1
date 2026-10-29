@@ -23,7 +23,6 @@ function crearTabla (productos){
         tdPRecio.textContent = p.precio;
         tr.append(tdId, tdNom, tdPRecio);
         tbody.appendChild(tr);
-
     }); 
 }
 async function inicio() {

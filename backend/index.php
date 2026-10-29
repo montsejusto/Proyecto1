@@ -1,6 +1,5 @@
 <?php
 include_once("config/parameters.php");
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 function showError($code, $message)
 {
     http_response_code($code);
