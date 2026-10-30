@@ -4,7 +4,7 @@
     text-align: center;
 }
 .linea{
-    background-color: rgb(130, 6, 6);
+    background-color: #D21008;
     height: 2px;
     margin: 0;
 }  
@@ -19,4 +19,28 @@
     opacity: 0;
     transition: .5s ease;
     background-color: #221f1f;
+}
+.logo-blanco{
+    filter: brightness(0) invert(1);
+}
+.icon-button {
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    color: #D21008;
+    cursor: pointer;
+}
+
+.icon-button svg {
+    display: block;
+    width: 20px;
+    height: 20px;
 }
