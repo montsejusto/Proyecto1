@@ -1,9 +1,11 @@
 <?php
+include_once("models/PlatoDAO.php");
 class CartaController{
  public function index()
     {           
+        $platos = PlatoDAO::getAll();
         $view = "views/carta.php";
-        include_once 'views/main.php';
+        require 'views/main.php';
     }
 }
 ?>

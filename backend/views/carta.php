@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <title>Carta</title>
-</head>
-<body>
-
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+<div class="container my-5">
+    <div class="row g-4">
+        <?php foreach ($platos as $plato): ?>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="<?= htmlspecialchars($plato->getImagen()) ?>" class="card-img-top" alt="<?= htmlspecialchars($plato->getNombre()) ?>">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><?= htmlspecialchars($plato->getNombre()) ?></h5>
+                        <p class="card-text"><?= htmlspecialchars($plato->getDescripcion()) ?></p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fw-bold"><?= number_format($plato->getPrecio(), 2) ?> €</span>
+                            <a href="?controller=carta&action=detalle&id=<?= $plato->getId() ?>" class="btn btn-dark">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
