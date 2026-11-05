@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title> Productos</title>
+    <title> ProductosTWS</title>
     <style>
         body { font-family: system-ui, sans-serif; margin: 2rem; line-height: 1.5; }
         table { border-collapse: collapse; width: 100%; max-width: 640px; }
@@ -29,5 +29,9 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
-
+<style>
+  li, a, p, h2, h1, h2, h3, h5, label {
+    color: #D21008 !important; 
+  }
+</style>
 </html>

@@ -1,29 +1,15 @@
 .bloque-amarillo{
     background-color: #FEF7CB;
-    padding: 15px;
+    padding: 1px;
     text-align: center;
 }
+
 .linea{
     background-color: #D21008;
     height: 2px;
     margin: 0;
-}  
-.overlay{
- position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #221f1f;
-}
-.logo-blanco{
-    filter: brightness(0) invert(1);
-}
-.icon-button {
+} 
+.icon-button{
     appearance: none;
     background: transparent;
     border: none;
@@ -37,10 +23,49 @@
     height: 40px;
     color: #D21008;
     cursor: pointer;
-}
-
+} 
 .icon-button svg {
     display: block;
     width: 20px;
     height: 20px;
+}
+.logo {
+    max-height: 80px;
+    width: auto;
+}
+.navbar-toggler {
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+.navbar-toggler-icon {
+    background-image: url("../assets/icon/flor.svg");
+    width: 2rem;
+    height: 2rem;
+}
+.imagen-filosofia img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.texto-filosofia {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    transform: translateY(-90%);
+    width: 40%;
+    color: white;
+}
+/* Carta seccion*/
+.momento-btn {
+    background-color: white !important;
+    color: #D21008 !important;
+    border: none !important;
+    border-radius: 20px;
+    padding-left: 20px !important;
 }

@@ -4,37 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
     <title>TWS</title>
 </head>
 
 <body>
-    <div class="bloque-amarillo">20% de descuento</div>
-    <hr class="linea">
-    <!--INCIO DEL NAV-->
+    
+  
+<div class="container-fluid p-0">
 
-    <!--FIN DEL NAV-->
-    <div class="container-fluid p-0 vh-100">
-        <div class="row g-0">
-            <div class="col-sm-12 col-md-6 h-50">
-                <img src="../assets/img/Gofres.png" alt="Gofres florales" class="img-fluid w-100 h-100 object-fit-cover">
-                <div class="position-absolute bottom-0 start-0 ms-3 mb-3">
-                    <button type="button" class="btn btn-primary btn-lg shadow">Descubrir menú</button>
-                </div>
+    <div class="row g-0">
+        <div class="col-12 col-md-6 position-relative">
+
+            <img src="../assets/img/Gofres.png"
+                 alt="Gofres florales"
+                 class="img-fluid w-100 h-100 object-fit-cover">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <div class="position-absolute top-50 start-0 translate-middle-y ms-4 ms-md-5 texto-hero">
+
+                <h1 class="text-white">
+                    TWOGETHER<br>
+                    DONDE TODO SABE<br>
+                    MEJOR JUNTOS
+                </h1>
+
+                <a href="index.php?controller=carta"
+                   class="btn bg-white text-danger border border-danger mt-3">
+                    Descubrir menú
+                </a>
 
             </div>
-            <div class="col-sm-12 col-md-6 h-50">
-                <img src="../assets/img/Croquetas.png" alt="Croquetas en salsa"
-                    class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
+
         </div>
+        <div class="col-12 col-md-6 position-relative">
+
+            <img src="../assets/img/Croquetas.png"
+                 alt="Croquetas en salsa"
+                 class="img-fluid w-100 h-100 object-fit-cover">
+
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+        </div>
+
     </div>
+
+</div>
+<!--Segunda seccion-->
     <div class="container">
         <h2>Los favoritos de Twogether</h2>
         <p>Los platos que nunca fallan, a cualquier hora del dia.</p>
-        <button type="button" class="btn btn-primary btn-lg shadow">Descubrir menú</button>
+        <button type="button" class="btn btn-primary btn-lg shadow">Ver Todo</button>
         <h2>Asi se vive Twogether</h2>
         <div class="row g-3">
             <div class="col-sm-12 col-md-4 mb-4">
@@ -61,14 +80,34 @@
             </div>
         </div>
     </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 position-relative">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            <img src="../assets/img/Restaurante_TFS.png"
+                 alt="Restaurante Twogether"
+                 class="img-fluid ">
 
+            <div class="position-absolute top-50 start-0 translate-middle-y p-4 text-white">
+                <h3 class="cB">NUESTRA FILOSOFÍA</h3>
+                <h2 class="cB">Todo sabe mejor juntos.</h2>
+                <p class="cB">
+                    En Twogether celebramos esos pequeños momentos
+                    que terminan siendo los mejores: un brunch sin prisas,
+                    algo rico para compartir o un café que se alarga.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 <!--ver pedidos y cosas del perfil usuario nombre php y la direccion -->
 </body>
-
+<style>
+    .cB{
+    color: #FFFFFF !important;
+}
+</style>
 </html>
