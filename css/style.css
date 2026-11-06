@@ -32,18 +32,28 @@
 .logo {
     max-height: 80px;
     width: auto;
+    filter: invert(11%) sepia(95%) saturate(5419%) hue-rotate(359deg) brightness(90%) contrast(96%);
 }
-.navbar-toggler {
+.logo-blanco{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}.navbar-toggler {
     border: 0;
     padding: 0;
     box-shadow: none;
+    border: 0 !important;
+    outline: none !important;
 }
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
+    box-shadow: none !important;  
 }
+
 .navbar-toggler-icon {
-    background-image: url("../assets/icon/flor.svg");
+    background-image: url("../assets/icon/flor.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
     width: 2rem;
     height: 2rem;
 }

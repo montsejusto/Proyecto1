@@ -8,7 +8,7 @@
 <body>
 
     <div class="bloque-amarillo text-center py-2 py-md-3">
-        <p class="m-0 small">20% de descuento</p>
+        <p class="m-0 small">20% de descuento al instalar la aplicación de TFS</p>
     </div>
     <hr class="linea">
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 flex-column">
@@ -61,7 +61,7 @@
                         <a class="nav-link " href="carta.php">Amanece en Twogether</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carta.php">Hora Social</a>
+                        <a class="nav-link" href="carta.php">La hora de compartir</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="carta.php">La galeria nocturna</a>

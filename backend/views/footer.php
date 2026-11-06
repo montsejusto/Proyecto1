@@ -18,12 +18,12 @@
                  class="img-fluid w-75 logo-blanco">
         </div>
 
-        <h3 class="mb-4">
+        <h3 class="mb-4 h3F">
             Comer juntos. Sentirse bien.
         </h3>
 
         <div class="mb-3">
-            <h5>EXPLORA</h5>
+            <h5 class="h5F">EXPLORA</h5>
 
             <div class="row justify-content-center">
                 <div class="col-6 col-md-3">
@@ -47,8 +47,9 @@
 </footer>
 </body>
 <style>
-    .tp{
+    .tp, .h3F, .h5F{
         color: #FFFFFF !important;
     }
+
 </style>
 </html>

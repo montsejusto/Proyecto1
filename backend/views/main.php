@@ -30,7 +30,7 @@
         crossorigin="anonymous"></script>
 </body>
 <style>
-  li, a, p, h2, h1, h2, h3, h5, label {
+  li, a, p, h2, h1, h2, h3, h5, label, span {
     color: #D21008 !important; 
   }
 </style>
